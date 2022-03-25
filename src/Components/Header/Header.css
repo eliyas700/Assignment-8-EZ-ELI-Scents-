@@ -1,6 +1,9 @@
 .active {
   color: #a16a1d !important;
 }
+.navbar-toggler-icon {
+  color: antiquewhite !important;
+}
 .nav-link {
   color: #f6e58d !important;
 }
