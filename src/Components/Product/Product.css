@@ -21,15 +21,37 @@
 }
 .product-info {
   margin: 20px 0;
-  height: calc(100% - 400px);
+  height: calc(100% - 420px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.product-info h2 {
+.product-info h3 {
   font-family: "Ramaraja", serif;
 }
 .brand {
   color: #91672c;
   font-weight: bold;
+}
+
+.add-cart-btn {
+  display: flex;
+  font-size: 18px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  padding-top: 17px;
+  width: 180px;
+  height: 48px;
+  background-color: #91672c;
+  border: none;
+  border-radius: 50px;
+  color: #dfdddd;
+  align-items: center;
+  margin: 0 auto;
+  box-shadow: 4px 5px 10px #91672c;
+  transition: 0.5s ease-in-out;
+}
+.add-cart-btn:hover {
+  box-shadow: none;
 }
