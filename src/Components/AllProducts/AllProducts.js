@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
+import { MdOutlineCleaningServices} from 'react-icons/md';
 import './AllProducts.css'
 const AllProducts = () => {
     const[products,setProducts]=useState([]);
@@ -13,6 +14,10 @@ const AllProducts = () => {
     const addToCart=(item)=>{
        const newCart=[...cart, item]
        setCart(newCart)
+    }
+    const cleanCart=()=>{
+       let empty=[]
+        setCart(empty)
     }
     return (
         <div className='products-box container-fluid mx-auto'>
@@ -27,6 +32,7 @@ const AllProducts = () => {
                {
                    cart.map(item=><Cart key={item.id} item={item}></Cart>)
                }
+               <button onClick={cleanCart} className='my-3 mx-auto d-block py-2 px-2 btn-danger clean-cart'>Clean Cart <MdOutlineCleaningServices size={20}/> </button>
            </div>
         </div>
     );
