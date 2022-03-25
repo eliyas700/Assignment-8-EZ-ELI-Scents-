@@ -1,4 +1,14 @@
 .products-box {
   display: grid;
   grid-template-columns: 3.7fr 1fr;
+  gap: 20px;
+}
+.cart-container {
+  background-color: bisque;
+  margin-top: 25px;
+  height: 80vh;
+  border-radius: 10px;
+}
+.cart-title {
+  font-family: "Ramaraja", serif;
 }

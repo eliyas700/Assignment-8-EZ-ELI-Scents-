@@ -1,0 +1,16 @@
+.cart-img {
+  width: 70px;
+  border-radius: 50%;
+  padding: 5px;
+  border: 2px solid sandybrown;
+}
+.delete-cart {
+  background-color: #fff;
+  color: #d63031;
+  border-radius: 50%;
+  border: none;
+  transition: 0.5s ease-in-out;
+}
+.delete-cart:hover {
+  transform: scale(1.3);
+}
