@@ -9,6 +9,8 @@
   height: 80vh;
   border-radius: 10px;
   overflow-y: scroll;
+  position: sticky;
+  top: 0;
 }
 .cart-title {
   font-family: "Ramaraja", serif;

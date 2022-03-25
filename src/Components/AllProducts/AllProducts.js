@@ -19,13 +19,15 @@ const AllProducts = () => {
     }
     const cleanCart=()=>{
        let empty=[]
-        setCart(empty)
+       cart.length>=1 ? setCart(empty) : alert("Oops! There's Nothing To Clean")
+        
     }
     const chooseOne=()=>{
         const empty=[];
         const luck=cart[Math.floor(Math.random()*cart.length)];
         const newObj=[...empty, luck]
-        setCart(newObj)
+        cart.length>=2 ? setCart(newObj) : alert('Please Select At Least 2 Items!')
+        
         
     }
     return (
