@@ -27,7 +27,6 @@ const AllProducts = () => {
       }
       else{
         const unexistedItems=cart.filter(pro=>pro.id !== item.id);
-        console.log(unexistedItems);
         newCart=[...unexistedItems,existedItem];
         item.quantity=item.quantity+1;
       }

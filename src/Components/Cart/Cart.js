@@ -2,10 +2,7 @@ import React from 'react';
 import './Cart.css'
 import { AiFillDelete } from 'react-icons/ai';
 const Cart = ({item,deleteItem}) => {
-
     const {img,name,quantity}=item
-    // console.log(item);
-   
     return (
 <div>
     <div className="card mb-3" >
