@@ -18,3 +18,14 @@
 .clean-cart {
   border-radius: 10px;
 }
+
+@media only screen and (max-width: 600px) {
+  .products-box {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .cart-container {
+    position: relative;
+  }
+}

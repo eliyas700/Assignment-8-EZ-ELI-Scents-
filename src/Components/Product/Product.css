@@ -55,3 +55,8 @@
 .add-cart-btn:hover {
   box-shadow: none;
 }
+@media only screen and (max-width: 600px) {
+  .product {
+    margin: 20px auto;
+  }
+}

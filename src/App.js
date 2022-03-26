@@ -5,12 +5,14 @@ import 'jquery/dist/jquery.min.js'
 import 'bootstrap/dist/js/bootstrap.min.js'
 import Header from './Components/Header/Header';
 import AllProducts from './Components/AllProducts/AllProducts';
+import Questions from './Questions/Questions';
 
 function App() {
   return (
     <div className="App">
       <Header></Header>
       <AllProducts></AllProducts>
+      <Questions></Questions>
     </div>
   );
 }
