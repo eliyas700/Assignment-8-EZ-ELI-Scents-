@@ -6,6 +6,7 @@ import 'bootstrap/dist/js/bootstrap.min.js'
 import Header from './Components/Header/Header';
 import AllProducts from './Components/AllProducts/AllProducts';
 import Questions from './Questions/Questions';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Header></Header>
       <AllProducts></AllProducts>
       <Questions></Questions>
+      <Footer></Footer>
     </div>
   );
 }

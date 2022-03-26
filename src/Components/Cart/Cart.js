@@ -9,12 +9,11 @@ const Cart = ({item,deleteItem}) => {
     return (
 <div>
     <div className="card mb-3" >
-        <div className="row g-0 align-items-center">
-            <div className="col-md-3">
+        <div className="row g-0 align-items-center cart">
+            <div className="col-3">
                 <img className='cart-img' src={img} alt={name}/>
-                {/* <img src={}className="img-fluid rounded-start" alt="..."> */}
             </div>
-            <div className="col-md-9 py-2">
+            <div className="col-9 py-2">
             <span className="position-absolute top-0 start-75 translate-middle badge rounded-pill bg-danger">{quantity}</span>
                 <div className="card-body d-flex">
                  <h6 className="card-title">{item.name}</h6>
