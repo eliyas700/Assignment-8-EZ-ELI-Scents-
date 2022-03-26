@@ -13,9 +13,19 @@ const AllProducts = () => {
         .then(data=>setProducts(data))
     },[])
     const addToCart=(item)=>{
-       const newCart=[...cart, item]
-       setCart(newCart)
-    //    console.log(newCart);
+       const existedItem=cart.find(pro=>pro.id === item.id)
+       let newCart=[];
+      if(!existedItem){
+         newCart=[...cart, item];
+         item.quantity=1;
+      }
+      else{
+        const unexistedItems=cart.filter(pro=>pro.id !== item.id);
+        console.log(unexistedItems);
+        newCart=[...unexistedItems,existedItem];
+        item.quantity=item.quantity+1;
+      }
+      setCart(newCart)
     }
     const cleanCart=()=>{
        let empty=[]
